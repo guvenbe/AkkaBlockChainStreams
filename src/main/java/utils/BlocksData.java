@@ -1,7 +1,10 @@
 package utils;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
+import java.util.List;
 
+import model.Block;
 import model.Transaction;
 
 public class BlocksData {
@@ -23,8 +26,11 @@ public class BlocksData {
 	public static Block getNextBlock(int id, String lastHash) {
 		
 		Transaction transaction = new Transaction(id, timeStamps[id], customerIds[id], amounts[id]);
+
+		List<Transaction> transactions = new ArrayList<>();
+		transactions.add(transaction);
 		
-		Block nextBlock = new Block(transaction, lastHash);
+		Block nextBlock = new Block(lastHash, transactions);
 		return nextBlock;
 	}
 	
