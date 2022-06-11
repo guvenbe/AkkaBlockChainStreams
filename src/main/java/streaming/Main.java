@@ -26,7 +26,7 @@ public class Main {
                     transId++;
                     System.out.println("Received transaction " + transId);
                     return new Transaction(transId, System.currentTimeMillis(), random.nextInt(1000),
-                            random.nextDouble() * 1000 );
+                            random.nextDouble() * 100 );
                 });
     }
 }
