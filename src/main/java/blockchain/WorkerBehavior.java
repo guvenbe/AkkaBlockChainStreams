@@ -6,7 +6,6 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Receive;
 import akka.actor.typed.javadsl.Behaviors;
-import model.Block;
 import model.HashResult;
 import utils.BlockChainUtils;
 

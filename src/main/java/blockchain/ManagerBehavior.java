@@ -5,7 +5,6 @@ import akka.actor.typed.Behavior;
 import akka.actor.typed.SupervisorStrategy;
 import akka.actor.typed.Terminated;
 import akka.actor.typed.javadsl.*;
-import model.Block;
 import model.HashResult;
 
 import java.io.Serializable;

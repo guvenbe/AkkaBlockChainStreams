@@ -4,9 +4,6 @@ import java.util.concurrent.CompletionStage;
 
 import akka.actor.typed.ActorSystem;
 import akka.actor.typed.javadsl.AskPattern;
-import blockchain.ManagerBehavior;
-import model.Block;
-import model.BlockChain;
 import model.BlockValidationException;
 import model.HashResult;
 import utils.BlocksData;

@@ -2,7 +2,6 @@ package utils;
 
 import java.util.GregorianCalendar;
 
-import model.Block;
 import model.Transaction;
 
 public class BlocksData {

@@ -3,7 +3,6 @@ import akka.actor.testkit.typed.javadsl.BehaviorTestKit;
 import akka.actor.testkit.typed.javadsl.TestInbox;
 import blockchain.ManagerBehavior;
 import blockchain.WorkerBehavior;
-import model.Block;
 import model.HashResult;
 import org.junit.jupiter.api.Test;
 import org.slf4j.event.Level;

@@ -1,11 +1,10 @@
 package utils;
 
+import model.Block;
+
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
-import model.Block;
-import model.HashResult;
 
 public class BlockChainUtils {
 
@@ -30,7 +29,8 @@ public class BlockChainUtils {
 		
 			
 	public static boolean validateBlock(Block block) {
-		String dataToEncode = block.getPreviousHash() + Long.toString(block.getTransaction().getTimestamp()) + Integer.toString(block.getNonce()) + block.getTransaction();
+		String dataToEncode = block.getPreviousHash() + Long.toString(block.getFirstTimestamp()) +
+				Integer.toString(block.getNonce()) + block.getTransactions();
 		String checkHash = calculateHash(dataToEncode);
 		return (checkHash.equals(block.getHash()));
 	}
